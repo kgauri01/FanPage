@@ -1,0 +1,41 @@
+.titleImage {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1544140119-e0ad950faf9e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center center;
+    background-size: cover;
+}
+
+.titleImage >div {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translateX(-20%) translateY(-20%);
+    text-align: center;
+    color:white;
+    margin-top:70px;
+    border-right:8px solid  #DAA520;
+}
+ 
+.titleImage h1 {
+    font-size: 64px;
+    margin-top:auto;
+}
+
+.titleImage .helloText{
+    width:40%;
+    color: white;
+    float:right;
+    text-align:right;
+    margin-top:120px;
+    font-size:45px;
+    text-align:center;
+    margin-top:200px;
+    margin-right:60px;
+    font-style:italic;
+}

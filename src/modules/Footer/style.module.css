@@ -1,0 +1,40 @@
+.footer {
+    background-color: #333;
+    padding: 52px;
+    display: flex;
+    color: white;
+    font-size: 16px;;
+    position: relative;
+    bottom:0;
+    width: 100%;
+    box-sizing: border-box;
+    flex-flow:row;
+}
+
+.footer .text{
+      display: flex;
+      flex-flow: column;
+      width:45%;
+      text-align: right;
+}
+
+.footer .footerText1{
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.footer .youtubesec{
+    display: flex;
+    flex-flow: column;
+    width:30%;
+    text-align: center;
+    margin-left:50px;
+} 
+
+.footer .facesec{
+    display: flex;
+    flex-flow: column;
+    width:30%;
+    text-align: center;
+    margin-right:0;
+} 

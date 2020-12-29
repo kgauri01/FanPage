@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.navigationBar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    width: 550px;
+  }
+  
+  .navigationBar li {
+    font-family: "Kaushan Script";
+    margin-top: 2vmax;
+    padding: 14px 14px;
+    list-style: none;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 22px;
+    color: #DAA520;
+  }
+  .navigationBar li:hover {
+    border-bottom: 2px solid darkgray;
+    cursor: pointer;
+  }
+  
+  .navigationBar .active, .navigationBar .active:hover{
+    border-bottom: 2px solid black;
+  }
