@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.formbox{
+    text-align:center;
+    display:flex;
+    flex-flow:column;
+}
+
+.title{
+    font-family: "Kaushan Script";
+    font-size:60px;
+    color:red;
+    margin:auto;
+    padding-left:30px;
+    padding-right:30px;
+    border-bottom:2px solid black;
+    margin-bottom:100px;
+    border-style: dotted;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    margin-top:50px;
+}
+
+.nameinput{
+    border:1px solid black;
+    border-radius:30px;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:20px;
+    font-style:italic;
+    padding:10px;
+}
+
+.messageinput{
+    border:1px solid black;
+    border-radius:50px;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:20px;
+    font-style:italic;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.buttonsend{
+    font-family: "Kaushan Script";
+    font-size:20px;
+    color:red;
+    margin:auto;
+    border-bottom:2px solid black;
+    margin-top:20px;
+    margin-bottom:100px;
+    background-color:#DFE3EE;
+}
+
+.buttonsend:hover{
+    border:5px solid #DFE3EE;
+    cursor: pointer;
+}
