@@ -1,5 +1,5 @@
-import React from "react"
-
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 import HeaderFooterLayout from "../layouts/headerFooter"
 import TitleImage from "../modules/TitleImage"
 

@@ -30,6 +30,7 @@
     font-size:20px;
     font-style:italic;
     padding:10px;
+    outline:none;
 }
 
 .messageinput{
@@ -43,6 +44,7 @@
     padding-bottom:40px;
     padding-left:20px;
     padding-right:20px;
+    outline:none;
 }
 
 .buttonsend{

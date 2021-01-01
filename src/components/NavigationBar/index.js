@@ -13,7 +13,7 @@ const navTabs = [
 const NavigationBar = ({ activeTab, useThisStyle }) => (
     <nav className={styles[useThisStyle || 'navigationBar']}>
         {navTabs.map(({tab, to}) => (
-          <Link to={to} >
+          <Link style={{ textDecoration: 'none' }} to={to} >
               <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
           </Link>)
         )}
