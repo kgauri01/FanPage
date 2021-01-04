@@ -1,50 +1,61 @@
 import React from 'react'
 import styles from './style.module.css';
-import {Container,Row,Col,Card,Image,Button} from 'react-bootstrap'
+import {Container,Row,Col,Card,Button,CardImg} from 'react-bootstrap'
+import Image1 from "../../images/cover1.jpg"
+import Image2 from "../../images/cover2.jpeg"
+import Image3 from "../../images/cover3.jpeg"
+import Image4 from "../../images/cover4.jpeg"
+import Image5 from "../../images/cover5.jpg"
+import Image6 from "../../images/cover6.jpg"
+import Image7 from "../../images/cover7.jpg"
+import Image8 from "../../images/cover8.jpg"
+import Image9 from "../../images/cover9.jpg"
+import Image10 from "../../images/cover10.jpg"
+import Image11 from "../../images/cover11.jpg"
  
 const Albums = () => {
 
     const CardInfo=[
-        {image:"cover1.jpg",title:"Kad bi' bio bijelo dugme",subtitle:"1974.",text:""},
-        {image:"cover2.jpeg",title:"Šta bi dao da si na mom mjestu",subtitle:"1975.",text:""},
-        {image:"cover3.jpeg",title:"Eto! Baš hoću!",subtitle:"1976.",text:""},
-        {image:"cover4.jpeg",title:"Bitanga i princeza",subtitle:"1979.",text:""},
-        {image:"cover5.jpg",title:"Doživjeti stotu",subtitle:"1980.",text:""},
-        {image:"cover6.jpg",title:"...a milicija trenira strogoću!",subtitle:"1983.",text:""},
-        {image:"cover7.jpg",title:"Uspavanka za Radmilu M.",subtitle:"1983.",text:""},
-        {image:"cover8.jpg",title:"Bijelo dugme",subtitle:"1984.",text:""},
-        {image:"cover9.jpg",title:"Pljuni i zapjevaj moja Jugoslavijo",subtitle:"1986.",text:""},
-        {image:"cover10.jpg",title:"Ćiribiribela",subtitle:"1988.",text:""},
-        {image:"cover11.jpg",title:"Ko Ne Poludi Taj Nije Normalan!",subtitle:"2016.",text:""},
+        {image:Image1,title:"Kad bi' bio bijelo dugme",subtitle:"1974.",text:"ervfer"},
+        {image:Image2,title:"Šta bi dao da si na mom mjestu",subtitle:"1975."},
+        {image:Image3,title:"Eto! Baš hoću!",subtitle:"1976."},
+        {image:Image4,title:"Bitanga i princeza",subtitle:"1979."},
+        {image:Image5,title:"Doživjeti stotu",subtitle:"1980."},
+        {image:Image6,title:"...a milicija trenira strogoću!",subtitle:"1983."},
+        {image:Image7,title:"Uspavanka za Radmilu M.",subtitle:"1983."},
+        {image:Image8,title:"Bijelo dugme",subtitle:"1984."},
+        {image:Image9,title:"Pljuni i zapjevaj moja Jugoslavijo",subtitle:"1986."},
+        {image:Image10,title:"Ćiribiribela",subtitle:"1988."},
+        {image:Image11,title:"Ko Ne Poludi Taj Nije Normalan!",subtitle:"2016."},
     ];
 
+
     const renderCard=(card,index) =>{
-        return(
-        <main>
-        <Container>
-            <Row className="mt-3">
-                <Col md={3}>
-                    <Card className="mb-3" key={index}>
-                    <Image src={card.image} className="card-img-top"  fluid />
-                        <Card.Body>
-                            <Card.Title>{card.title}</Card.Title>
-                            <Card.Text>
-                                <h5>{card.subtitle}</h5>
-                                {card.text}
-                                <Button className="mt-4">O albumu</Button>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
-    </main>
+        return(   
+             <Container>
+                <Row>      
+                     <Col sm="4">  
+                     <Card className="mb-3" key={index}>
+                         <CardImg src={card.image} className="card-img-top" height="250px" fluid="true"/>
+                         <Card.Body >
+                             <Card.Title>{card.title}</Card.Title>
+                             <Card.Text>
+                                 <h5>{card.subtitle}</h5>
+                                 <div>
+                                    <Button className="mt-4">O albumu</Button>
+                                 </div>
+                             </Card.Text>
+                         </Card.Body>
+                     </Card> 
+                  </Col>                                             
+                </Row> 
+            </Container> 
         )
     }
 
-    return <div className="App"> 
-        <h3 className={styles.textexplain}>Popis svih albuma te detaljnije pojašnjenje svakoga pojedinog albuma</h3>
-        {CardInfo.map(renderCard)}
+    return <div>
+        <h3 className={styles.textexplain}>Popis svih albuma te detaljnije informacije svakoga pojedinog albuma</h3>
+                {CardInfo.map(renderCard)}
         </div>
 }
 

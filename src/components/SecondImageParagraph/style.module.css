@@ -1,0 +1,26 @@
+.secondImageParagraph {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    width: 90vw;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+ 
+ 
+.secondImageParagraph .secondImageHalf, .secondArticleHalf {
+    min-width: 45%;
+    height: 100%;
+}
+ 
+.secondImageParagraph article {
+    max-width: 70%;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+}
+ 
+.secondImageHalf div, .secondImageHalf div div {
+    width: 100%;
+}
