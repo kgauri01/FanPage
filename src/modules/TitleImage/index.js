@@ -12,9 +12,9 @@ const TitleImage = () => (
       <Typed 
                     loop
                     typeSpeed={70}
-                    backSpeed={70}
+                    backSpeed={50}
                     strings={['Istražujte', 'Učite', 'Gledajte', 'Slušajte', 'Uživajte!']}
-                    backDelay={1000}
+                    backDelay={500}
                     loopCount={0}
                     showCursor
                     className="self-typed"

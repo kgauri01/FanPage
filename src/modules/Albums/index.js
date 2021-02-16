@@ -29,12 +29,9 @@ const Albums = () => {
         {image:Image11,title:"Ko Ne Poludi Taj Nije Normalan!",subtitle:"2016."},
     ];
 
-
     const renderCard=(card,index) =>{
         return(   
-             <Container>
-                <Row>      
-                     <Col sm="4">  
+                     <Col >  
                      <Card className="mb-3" key={index}>
                          <CardImg src={card.image} className="card-img-top" height="250px" fluid="true"/>
                          <Card.Body >
@@ -42,21 +39,25 @@ const Albums = () => {
                              <Card.Text>
                                  <h5>{card.subtitle}</h5>
                                  <div>
-                                    <Button className="mt-4">O albumu</Button>
+                                    <Button className="mt-4">Pjesme</Button>
                                  </div>
                              </Card.Text>
                          </Card.Body>
                      </Card> 
-                  </Col>                                             
-                </Row> 
-            </Container> 
+                  </Col>    
         )
     }
 
-    return <div>
-        <h3 className={styles.textexplain}>Popis svih albuma te detaljnije informacije svakoga pojedinog albuma</h3>
-                {CardInfo.map(renderCard)}
-        </div>
-}
 
+    return <Container>
+            <Row>
+                <Col className="text-center py-5">
+                    <h3 className={styles.textexplain}>Popis svih albuma te detaljnije informacije svakoga pojedinog albuma</h3>
+                </Col>
+            </Row>
+            <Row xs={1} md={2} lg={3}>      
+                {CardInfo.map(renderCard)}                                        
+            </Row> 
+        </Container>
+}
 export default Albums
