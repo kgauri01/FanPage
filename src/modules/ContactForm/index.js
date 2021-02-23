@@ -5,17 +5,17 @@ import styles from './style.module.css';
 const ContactForm = () => (
     <main>
             <form className={styles.formbox}>
-                <p className={styles.title}>Contact us</p>
+                <p className={styles.title}>Pitajte!</p>
                 <div>
-                    <input className={styles.nameinput}  name="name" type="text" placeholder="Your name" size="40"/>
+                    <input className={styles.nameinput}  name="name" type="text" placeholder="Ime i prezime" size="40"/>
                 </div>
                 <div>
                     <input  className={styles.nameinput} name="name" type="text" placeholder="Email" size="40"/>
                 </div>
                 <div>
-                    <input  className={styles.messageinput}  name="message" type="text" placeholder="Message" size="40"/>
+                    <input  className={styles.messageinput}  name="message" type="text" placeholder="Poruka" size="40"/>
                 </div>
-                <button className={styles.buttonsend}>Send a message</button>
+                <button className={styles.buttonsend}>Pošalji poruku</button>
             </form>
     </main>
 )
