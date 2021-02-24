@@ -39,9 +39,9 @@ const Albums = () => {
                              <Card.Title>{card.title}</Card.Title>
                              <Card.Text>
                                  <h5>{card.subtitle}</h5>
-                                 <div>
-                                 <OverlayTrigger trigger="click" placement="right" overlay={ <Popover id="popover-basic"><Popover.Content>{card.pjesme.map(tab => <li className={styles.tekstpjesama}>{tab}</li>)}</Popover.Content></Popover>}>
-                                    <Button className="mt-4">Pjesme</Button>
+                                 <div className={styles.malipopover}>
+                                    <OverlayTrigger trigger="click" placement="bottom" overlay={ <Popover id="popover-basic"><Popover.Content>{card.pjesme.map(tab => <li className={styles.tekstpjesama}>{tab}</li>)}</Popover.Content></Popover>}>
+                                        <Button className="mt-4">Pjesme</Button>
                                     </OverlayTrigger>
                                  </div>
                              </Card.Text>

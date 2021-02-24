@@ -26,6 +26,7 @@
     font-size: 64px;
     margin-top:auto;
     border-right:8px solid  #DAA520;
+    text-align:left;
 }
 
  .titleImage .helloText{
@@ -39,3 +40,46 @@
     margin-right:200px;
     font-style:italic;
 }
+
+@media (max-width:850px){
+    .titleImage{
+      background:none;
+      background-color:rgb(11, 11, 48);
+    }
+  }
+
+  @media (max-width:850px){
+    .titleImage h1{
+        border-right:none;
+    }
+  }
+
+  @media (max-width:850px){
+    .titleImage .helloText{
+        display:none;
+    }
+  }
+
+  @media (max-width:500px){
+    .titleImage h1{
+        font-size:50px;
+    }
+  }
+
+  @media (max-width:390px){
+    .titleImage h1{
+        font-size:40px;
+    }
+  }
+
+  @media (max-width:315px){
+    .titleImage h1{
+        font-size:30px;
+    }
+  }
+
+  @media (max-width:190px){
+    .titleImage h1{
+        font-size:20px;
+    }
+  }

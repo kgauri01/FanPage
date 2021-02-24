@@ -20,3 +20,9 @@
   font-size: 30px;
   margin-left:50px;
 }
+
+@media (max-width:810px){
+  .logo{
+    display:none;
+  }
+}

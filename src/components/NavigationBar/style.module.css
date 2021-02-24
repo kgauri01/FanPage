@@ -25,3 +25,34 @@
   .navigationBar .active, .navigationBar .active:hover{
     border-bottom: 2px solid black;
   }
+
+  @media (max-width:550px){
+
+    .navigationBar {
+      width: 450px;
+    }
+
+    .navigationBar li{
+      margin-top: 6vmax;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width:450px){
+
+    .navigationBar {
+      width: 340px;
+    }
+  }
+
+  @media (max-width:340px){
+
+    .navigationBar {
+      width: 240px;
+    }
+
+    .navigationBar li{
+      margin-top: 6vmax;
+      font-size: 8px;
+    }
+  }

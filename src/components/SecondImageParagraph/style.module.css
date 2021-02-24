@@ -24,3 +24,9 @@
 .secondImageHalf div, .secondImageHalf div div {
     width: 100%;
 }
+
+@media (max-width:635px){
+    .secondImageHalf{
+      display:none;
+    }
+  }

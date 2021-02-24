@@ -23,6 +23,7 @@
 }
 
 .nameinput{
+    size:2em;
     border:1px solid black;
     border-radius:1rem;
     margin-bottom:20px;
@@ -63,3 +64,17 @@
     border:2px solid transparent;
     cursor: pointer;
 }
+
+@media (max-width:470px){
+    .title{
+        font-size:30px;
+    }
+
+    .nameinput{
+        width:60%;
+    }
+
+    .messageinput{
+        width:60%
+    }
+  }

@@ -38,3 +38,15 @@
     text-align: center;
     margin-right:0;
 } 
+
+@media (max-width:540px){
+    .footer .text{
+      display:none;
+    }
+  }
+
+@media (max-width:470px){
+    .footer .facesec{
+      display:none;
+    }
+  }
